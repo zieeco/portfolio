@@ -196,7 +196,10 @@ main {
 }
 
 .project-works .tags {
-  display: flex;
+  /* remove the display of flex */
+
+  /* display: flex; */
+
   margin: 0 0 0.75rem 0;
   gap: 0.5rem;
   width: 100%;
