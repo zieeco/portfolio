@@ -405,7 +405,8 @@ main {
   color: #b3bac5;
 }
 
-/*Chimaijem Ugbordiegwu*/
+/* Chimaijem Ugbordiegwu */
+
 .contact-form label textarea {
   height: 10.625rem;
 }
@@ -415,11 +416,20 @@ main {
   width: 100%;
   padding: 0.9375rem 2.375rem 0.9375rem 1rem;
   background: #fff;
-  color: #172B4D;
+  color: #172b4d;
   border-radius: 8px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
 }
 
 .contact-form div {
   margin: 0.625rem 0 2rem 0;
+}
+
+.bottom-line {
+  width: 100%;
+  height: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  background-image: url(../images/bottom-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
