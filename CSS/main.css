@@ -351,3 +351,28 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* contact section */
+.contact-sect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.4375rem 1.5rem 0 1.5rem;
+  border-top-left-radius: 90px;
+  background: #3B4EFF;
+  background-image: url(./images/contact-form-shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 62% 96%;
+}
+.contact-sect .header-primary-text {
+  text-align: center;
+  color: #fff;
+}
+.contact-sect .para-primary-text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: #EBEBFF;
+  margin-bottom: 2.6875rem;
+}
