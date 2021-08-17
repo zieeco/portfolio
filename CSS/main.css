@@ -196,6 +196,7 @@ main {
 }
 
 .project-works .tags {
+  display: flex;
   margin: 0 0 0.75rem 0;
   gap: 0.5rem;
   width: 100%;
@@ -203,8 +204,6 @@ main {
 }
 
 .project-works .tag {
-  float: left;
-  margin-right: 8px;
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1rem;
