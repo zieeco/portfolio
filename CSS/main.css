@@ -352,27 +352,55 @@ main {
   background-size: cover;
 }
 
-/* contact section */
+/* Ugbordiegwu Chimaijem add contact section */
+
 .contact-sect {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 6.4375rem 1.5rem 0 1.5rem;
   border-top-left-radius: 90px;
-  background: #3B4EFF;
-  background-image: url(./images/contact-form-shapes-mobile.svg);
+  background: #3b4eff;
+  background-image: url(../images/contact-form-shapes-mobile.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 62% 96%;
 }
+
 .contact-sect .header-primary-text {
   text-align: center;
   color: #fff;
 }
+
 .contact-sect .para-primary-text {
   font-size: 1.25rem;
   line-height: 1.75rem;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
   margin-bottom: 2.6875rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.contact-form label {
+  display: flex;
+  width: 100%;
+}
+
+.contact-form label input::placeholder {
+  font-size: 1.0625rem;
+  color: #172b4d;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+.contact-form label textarea::placeholder {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #b3bac5;
 }
