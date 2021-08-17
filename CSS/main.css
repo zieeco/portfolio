@@ -404,3 +404,22 @@ main {
   font-weight: 400;
   color: #b3bac5;
 }
+
+/*Chimaijem Ugbordiegwu*/
+.contact-form label textarea {
+  height: 10.625rem;
+}
+
+.contact-form label input,
+.contact-form label textarea {
+  width: 100%;
+  padding: 0.9375rem 2.375rem 0.9375rem 1rem;
+  background: #fff;
+  color: #172B4D;
+  border-radius: 8px;
+  border: 1px solid #CFD8DC;
+}
+
+.contact-form div {
+  margin: 0.625rem 0 2rem 0;
+}
