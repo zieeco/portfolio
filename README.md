@@ -2,7 +2,9 @@
 
 This is my personal portfolio to showcase my projects.
 
-![screenshot](./screenshot.png)
+<p align="center">
+  <img src="./screenshot.png"/>
+</p>
 
 This project is from the Microverse curriculum. It's main objective is to help student understand how to parse a Figma design to create a user interface and also help student build their portfolio.
 
