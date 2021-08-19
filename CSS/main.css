@@ -162,7 +162,7 @@ main {
 }
 
 /* Mobile and Medium screen */
-@media screen and (min-width: 400px) and (max-width: 990px) {
+@media screen and (min-width: 400px) and (max-width: 991px) {
   .project-works .project-body-block {
     width: 15.75rem;
   }
@@ -442,7 +442,7 @@ main {
 }
 
 /* Hiding some desktop features in the mobile version */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
   header nav .nav-links,
   .desktop-image,
   .hide-for-mobile {
@@ -451,7 +451,7 @@ main {
 }
 
 /* Mobile and Medium */
-@media screen and (min-width: 600px) and (max-width: 990px) {
+@media screen and (min-width: 600px) and (max-width: 991px) {
   .headline {
     padding: 6.5rem 5rem 5.59375rem 5rem;
   }
@@ -481,7 +481,7 @@ main {
 }
 
 /* BIG SCREENS */
-@media screen  and (min-width: 991px) {
+@media screen  and (min-width: 992px) {
   header {
     height: 4.5rem;
   }
