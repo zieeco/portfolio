@@ -26,17 +26,6 @@ a {
   text-decoration: none;
 }
 
-a:link {
-  /* color: #5364fc; */
-
-  color: #344563;
-}
-
-a:hover {
-  color: #6e79df;
-  text-decoration: underline;
-}
-
 /* header section */
 header {
   display: flex;
