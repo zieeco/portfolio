@@ -161,6 +161,13 @@ main {
   margin: 0.75rem 0;
 }
 
+/* Mobile and Medium screen */
+@media screen and (min-width: 400px) and (max-width: 990px) {
+  .project-works .project-body-block {
+    width: 15.75rem;
+  }
+}
+
 .project-works .project-title {
   font-weight: bold;
   font-size: 2rem;
@@ -432,4 +439,243 @@ main {
   background-image: url(../images/bottom-line.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* Hiding some desktop features in the mobile version */
+@media screen and (max-width: 990px) {
+  header nav .nav-links,
+  .desktop-image,
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+/* Mobile and Medium */
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .headline {
+    padding: 6.5rem 5rem 5.59375rem 5rem;
+  }
+
+  .about-myself {
+    justify-content: center;
+    flex-direction: row;
+    padding: 4.375rem 4.375rem 4.1875rem 4.375rem;
+  }
+
+  .about-myself .top-container {
+    width: 77.3%;
+  }
+
+  .skill-lists {
+    width: 22.7%;
+  }
+
+  .contact-sect h2,
+  .contact-sect p {
+    max-width: 477px;
+  }
+
+  .contact-form {
+    max-width: 350px;
+  }
+}
+
+/* BIG SCREENS */
+@media screen  and (min-width: 991px) {
+  header {
+    height: 4.5rem;
+  }
+
+  main {
+    margin-top: 4.5rem;
+  }
+
+  header .my-logo-container {
+    margin-left: 8.9375rem;
+  }
+
+  header nav {
+    margin-right: 8.875rem;
+  }
+
+  header nav .nav-links {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.625rem 0.75rem;
+    gap: 1.25rem;
+  }
+
+  header .nav-link {
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    color: #344563;
+  }
+
+  header .menu,
+  .mobile-image,
+  .hide-for-desktop,
+  .bottom-line {
+    display: none;
+  }
+
+  .headline {
+    padding: 13rem 16.25rem 11.1875rem 17.75rem;
+    background-color: #fff;
+    background-image: url(../images/Header-bg.svg);
+    background-size: contain;
+  }
+
+  .header-primary-text {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    letter-spacing: 0.023125rem;
+    margin: 0.75rem 0;
+    color: #091e42;
+    width: 45%;
+  }
+
+  .para-primary-text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #344563;
+    margin: 0.75rem 0;
+  }
+
+  .headline .connect {
+    font-size: 1rem;
+  }
+
+  /* works section and project */
+
+  .works {
+    width: auto;
+  }
+
+  .project-works {
+    width: 80.28%;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    margin: auto;
+    gap: 1.357rem;
+  }
+
+  .works .project-works .project-image-container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .desktop-image {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .project-works .project-body-block {
+    width: 50%;
+    padding: 0 1.5rem 3rem 1.5rem;
+    margin: 0;
+  }
+
+  .project-works .project-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    padding: 0;
+  }
+
+  .project-works .project-info-items {
+    line-height: 1.5rem;
+    font-size: 1.125rem;
+  }
+
+  .project-works .canopy {
+    font-weight: 500;
+  }
+
+  .project-works .dsk-fw {
+    font-weight: 400;
+  }
+
+  .project-works .project-primary-text {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .project-works .tags {
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+
+  .row-reverse-desktop {
+    flex-direction: row-reverse;
+  }
+
+  /* About section */
+
+  .about-myself {
+    flex-direction: row;
+    gap: 1.5625rem;
+    padding: 8.875rem 8.875rem 8.375rem 8.875rem;
+    border-top-right-radius: 90px;
+    background-image: url(../images/about-myself-desktop.svg);
+    background-repeat: no-repeat;
+  }
+
+  .about-myself .top-container {
+    width: 55.3%;
+  }
+
+  .skill-lists {
+    width: 44.7%;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .language-list {
+    flex-direction: row;
+  }
+
+  .language {
+    flex-direction: column;
+    width: 32%;
+    height: 7.5rem;
+    justify-content: center;
+  }
+
+  .skill-title {
+    width: 85%;
+    padding: 0 0 0 0.75rem;
+  }
+
+  .frames-lfs {
+    margin: 0.125rem 0;
+  }
+
+  /* contact section */
+
+  .contact-sect {
+    background-image: url(../images/contact-form-background-shape-desktop.svg);
+    background-size: 97%;
+  }
+
+  .contact-sect h2,
+  .contact-sect p {
+    max-width: 550px;
+  }
+
+  .contact-form {
+    max-width: 450px;
+  }
+
+  .contact-form label input,
+  .contact-form label textarea {
+    border-radius: 0;
+    outline: none;
+  }
+
+  .contact-form div {
+    align-self: center;
+  }
 }
