@@ -26,17 +26,6 @@ a {
   text-decoration: none;
 }
 
-a:link {
-  /* color: #5364fc; */
-
-  color: #344563;
-}
-
-a:hover {
-  color: #6e79df;
-  text-decoration: underline;
-}
-
 /* header section */
 header {
   display: flex;
@@ -511,6 +500,30 @@ main {
     font-size: 0.9375rem;
     line-height: 1.25rem;
     color: #344563;
+  }
+
+  .my-logo {
+    animation: rotate 2.5s;
+  }
+
+  @keyframes rotate {
+    form {
+      transform: perspective(100px) rotateX(0deg);
+    }
+
+    to {
+      transform: perspective(100px) rotateX(360deg);
+    }
+  }
+
+  .nav-link a {
+    transition: color 1s ease-in-out;
+  }
+
+  .nav-link:hover a {
+    background: #ebeafc;
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   header .menu,
