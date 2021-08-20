@@ -502,6 +502,15 @@ main {
     color: #344563;
   }
 
+  .nav-link a {
+    transition: color 1s ease-in-out;
+  }
+  .nav-link:hover a {
+    background: #EBEAFC;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
   header .menu,
   .mobile-image,
   .hide-for-desktop,
