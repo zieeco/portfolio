@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -111,7 +109,6 @@ main {
 /* works section */
 
 .works {
-  display: -ms-grid;
   display: grid;
   row-gap: 5.5rem;
   justify-content: center;
@@ -503,15 +500,15 @@ main {
   }
 
   .my-logo {
-    animation: rotate 2.5s;
+    animation: rotate 2.5s ease-in-out 1s;
   }
 
   @keyframes rotate {
-    form {
+    0% {
       transform: perspective(100px) rotateX(0deg);
     }
 
-    to {
+    100% {
       transform: perspective(100px) rotateX(360deg);
     }
   }
@@ -559,8 +556,6 @@ main {
   .headline .connect {
     font-size: 1rem;
   }
-
-  /* works section and project */
 
   .works {
     width: auto;
@@ -625,8 +620,6 @@ main {
     flex-direction: row-reverse;
   }
 
-  /* About section */
-
   .about-myself {
     flex-direction: row;
     gap: 1.5625rem;
@@ -666,8 +659,6 @@ main {
     margin: 0.125rem 0;
   }
 
-  /* contact section */
-
   .contact-sect {
     background-image: url(../images/contact-form-background-shape-desktop.svg);
     background-size: 97%;
@@ -676,6 +667,34 @@ main {
   .contact-sect h2,
   .contact-sect p {
     max-width: 550px;
+  }
+
+  section.headline h1 {
+    animation: top-bottom 2s ease-in-out 0.5s;
+  }
+
+  @keyframes top-bottom {
+    0% {
+      transform: translateY(-500px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  section.headline p {
+    animation: left-right 2s ease-in-out 0.5s;
+  }
+
+  @keyframes left-right {
+    0% {
+      transform: translateX(-1000px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 
   .contact-form {
