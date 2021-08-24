@@ -534,7 +534,8 @@ main {
     padding: 13rem 16.25rem 11.1875rem 17.75rem;
     background-color: #fff;
     background-image: url(../images/Header-bg.svg);
-    background-size: contain;
+
+    /* background-size: contain; */
   }
 
   .header-primary-text {
