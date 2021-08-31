@@ -12,6 +12,7 @@ This project is from the Microverse curriculum. It's main objective is to help s
 
 - HTML
 - CSS
+- JAVASCRIPT
 
 ## Live Demo
 
