@@ -54,7 +54,6 @@ cancelImage.addEventListener('click', () => {
 
 document.querySelectorAll('.menu-list-items')[0].addEventListener('click', () => {
   menuDiv.style.display = 'none';
-  document.querySelector('.card');
   document.getElementById('header').style.filter = 'none';
 });
 
@@ -64,5 +63,6 @@ document.querySelectorAll('.menu-list-items')[1].addEventListener('click', () =>
 });
 
 document.querySelectorAll('.menu-list-items')[2].addEventListener('click', () => {
-  menuDiv.style.getElementById('header').style.filter = 'none';
+  menuDiv.style.display = 'none';
+  document.getElementById('header').style.filter = 'none';
 });
