@@ -10,7 +10,6 @@ menuDiv.appendChild(cancelImage);
 
 const menuListItem = document.createElement('ul');
 menuListItem.className = 'menu-list-item';
-// menuDiv.appendChild(menuListItem);
 
 const portfolio = document.createElement('li');
 portfolio.className = 'portfolio';
@@ -30,3 +29,39 @@ aboutLink.textContent = 'About';
 about.appendChild(aboutLink);
 menuListItem.appendChild(about);
 
+const contact = document.createElement('li');
+contact.className = 'contact';
+const contactLink = document.createElement('a');
+contactLink.className = 'menu-list-items';
+contactLink.href = '#contact';
+contactLink.textContent = 'Contact';
+contact.appendChild(contactLink);
+menuListItem.appendChild(contact);
+menuDiv.appendChild(menuListItem);
+body.appendChild(menuDiv);
+
+const menuIcon = document.querySelector('.menu');
+menuIcon.addEventListener('click', () => {
+  menuDiv.style.display = 'flex';
+  document.getElementById('header').style.filter = 'blur(0.3125rem)';
+});
+
+cancelImage.addEventListener('click', () => {
+  menuDiv.style.display = 'none';
+  document.getElementById('header').style.filter = 'none';
+});
+
+document.querySelector('.menu-list-items')[0].addEventListener('click', () => {
+  menuDiv.style.display = 'none';
+  document.querySelector('.card');
+  document.getElementById('header').style.filter = 'none';
+});
+
+document.querySelector('.menu-list-items')[1].addEventListener('click', () => {
+  menuDiv.style.display = 'none';
+  document.getElementById('header').style.filter = 'none';
+});
+
+document.querySelector('.menu-list-items')[2].addEventListener('click', () => {
+  menuDiv.style.getElementById('header').style.filter = 'none';
+});
