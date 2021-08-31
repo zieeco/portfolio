@@ -427,12 +427,31 @@ main {
   background-position: center;
 }
 
-/* Hiding some desktop features in the mobile version */
 @media screen and (max-width: 991px) {
   header nav .nav-links,
   .desktop-image,
   .hide-for-mobile {
     display: none;
+  }
+
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #1b31f0a2;
+    backdrop-filter: blur(4px);
+  }
+
+  .menu-content .x-menu {
+    display: flex;
+    align-self: flex-end;
+    padding: 3.75rem 2.375rem;
   }
 }
 
