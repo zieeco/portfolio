@@ -1,6 +1,7 @@
 const body = document.querySelector('body');
 const menuDiv = document.createElement('div');
 menuDiv.className = 'menu-content';
+menuDiv.style.display = 'none';
 
 const cancelImage = document.createElement('img');
 cancelImage.className = 'x-menu';
@@ -51,17 +52,17 @@ cancelImage.addEventListener('click', () => {
   document.getElementById('header').style.filter = 'none';
 });
 
-document.querySelector('.menu-list-items')[0].addEventListener('click', () => {
+document.querySelectorAll('.menu-list-items')[0].addEventListener('click', () => {
   menuDiv.style.display = 'none';
   document.querySelector('.card');
   document.getElementById('header').style.filter = 'none';
 });
 
-document.querySelector('.menu-list-items')[1].addEventListener('click', () => {
+document.querySelectorAll('.menu-list-items')[1].addEventListener('click', () => {
   menuDiv.style.display = 'none';
   document.getElementById('header').style.filter = 'none';
 });
 
-document.querySelector('.menu-list-items')[2].addEventListener('click', () => {
+document.querySelectorAll('.menu-list-items')[2].addEventListener('click', () => {
   menuDiv.style.getElementById('header').style.filter = 'none';
 });
