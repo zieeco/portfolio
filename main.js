@@ -3,43 +3,19 @@ const menuDiv = document.createElement('div');
 menuDiv.className = 'menu-content';
 menuDiv.style.display = 'none';
 
-const cancelImage = document.createElement('img');
+const htmlContent = `<img class="x-menu" src="images/Icon-Cancel.svg" alt="cancel image">
+<ul class="menu-list-item">
+  <li class="portfolio"><a class="menu-list-items" href="#portfolio">Portfolio</a></li>
+  <li class="about"><a class="menu-list-items" href="#about">About</a></li>
+  <li class="contact"><a class="menu-list-items" href="#contact">Contact</a></li>
+</ul>`;
+
+menuDiv.innerHTML = htmlContent;
+body.appendChild(menuDiv);
+const cancelImage = menuDiv.querySelector('img');
 cancelImage.className = 'x-menu';
 cancelImage.src = 'images/Icon-Cancel.svg';
 cancelImage.alt = 'cancel image';
-menuDiv.appendChild(cancelImage);
-
-const menuListItem = document.createElement('ul');
-menuListItem.className = 'menu-list-item';
-
-const portfolio = document.createElement('li');
-portfolio.className = 'portfolio';
-const portfolioLink = document.createElement('a');
-portfolioLink.className = 'menu-list-items';
-portfolioLink.href = '#portfolio';
-portfolioLink.textContent = 'Portfolio';
-portfolio.appendChild(portfolioLink);
-menuListItem.appendChild(portfolio);
-
-const about = document.createElement('li');
-about.className = 'about';
-const aboutLink = document.createElement('a');
-aboutLink.className = 'menu-list-items';
-aboutLink.href = '#about';
-aboutLink.textContent = 'About';
-about.appendChild(aboutLink);
-menuListItem.appendChild(about);
-
-const contact = document.createElement('li');
-contact.className = 'contact';
-const contactLink = document.createElement('a');
-contactLink.className = 'menu-list-items';
-contactLink.href = '#contact';
-contactLink.textContent = 'Contact';
-contact.appendChild(contactLink);
-menuListItem.appendChild(contact);
-menuDiv.appendChild(menuListItem);
-body.appendChild(menuDiv);
 
 const menuIcon = document.querySelector('.menu');
 menuIcon.addEventListener('click', () => {
@@ -52,17 +28,10 @@ cancelImage.addEventListener('click', () => {
   document.getElementById('header').style.filter = 'none';
 });
 
-document.querySelectorAll('.menu-list-items')[0].addEventListener('click', () => {
-  menuDiv.style.display = 'none';
-  document.getElementById('header').style.filter = 'none';
-});
-
-document.querySelectorAll('.menu-list-items')[1].addEventListener('click', () => {
-  menuDiv.style.display = 'none';
-  document.getElementById('header').style.filter = 'none';
-});
-
-document.querySelectorAll('.menu-list-items')[2].addEventListener('click', () => {
-  menuDiv.style.display = 'none';
-  document.getElementById('header').style.filter = 'none';
+const itemLists = document.querySelectorAll('.menu-list-items');
+itemLists.forEach((item) => {
+  item.addEventListener('click', () => {
+    menuDiv.style.display = 'none';
+    document.getElementById('header').style.filter = 'none';
+  });
 });
