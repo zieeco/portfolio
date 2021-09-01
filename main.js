@@ -78,3 +78,38 @@ const myProjects = [
   },
 
 ];
+
+const seeProjectBtn = document.querySelectorAll('.see-project');
+seeProjectBtn.forEach((item, i) => {
+  item.addEventListener('click', () => {
+    const project = myProjects[i];
+    const modalMenu = document.querySelector('.modal-container');
+    const projectTitle = modalMenu.querySelector('.modal-card-title');
+    projectTitle.textContent = project.name;
+    const projectDesc = modalMenu.querySelectorAll('.modal-primary-text');
+    const [mobileDesc, desktopDesc] = projectDesc;
+    mobileDesc.textContent = project.description;
+    desktopDesc.textContent = project.description;
+    projectDesc.textContent = project.description;
+    const projectMobileImage = modalMenu.querySelector('.mobile-image');
+    projectMobileImage.src = project.featuredImage;
+    const projectDesktopImage = modalMenu.querySelector('.desktop-image');
+    projectDesktopImage.src = project.featuredImage;
+    const liveLink = document.querySelector('.live-link');
+    liveLink.href = project.liveVersion;
+    const liveSourceCode = document.querySelector('.source-code');
+    liveSourceCode.href = project.sourceCode;
+    const allTech = document.querySelectorAll('.modal-tag');
+    allTech.forEach((item, i) => {
+      item.textContent = project.technology[i];
+    });
+
+    modalMenu.style.display = 'flex';
+  });
+});
+
+const modalCancelBtn = document.querySelector('.modal-cancel-image');
+modalCancelBtn.addEventListener('click', () => {
+  const removeModalContainer = document.querySelector('.modal-container');
+  removeModalContainer.style.display = 'none';
+});
