@@ -35,3 +35,46 @@ itemLists.forEach((item) => {
     document.getElementById('header').style.filter = 'none';
   });
 });
+
+const myProjects = [
+
+  {
+    name: 'Tonic',
+    description: `A daily selection of privately'personalized reads; no accounts or sign-ups
+    required.`,
+    featuredImage: './images/SnapshootDesktopPortfolioA.svg',
+    technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    liveVersion: 'https://zieeco.github.io/portfolio/',
+    sourceCode: 'https://github.com/zieeco/portfolio',
+  },
+
+  {
+    name: 'Multi-Post Stories',
+    description: `Experimental content creation feature that allows users to add
+    to an existing story over the course of a day without
+    spamming their friends.`,
+    featuredImage: './images/SnapshootDesktopPortfolioB.svg',
+    technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    liveVersion: 'https://zieeco.github.io/portfolio/',
+    sourceCode: 'https://github.com/zieeco/portfolio',
+  },
+
+  {
+    name: 'Facebook 360',
+    description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR',
+    featuredImage: './images/SnapshootDesktopPortfolioC.svg',
+    technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    liveVersion: 'https://zieeco.github.io/portfolio/',
+    sourceCode: 'https://github.com/zieeco/portfolio',
+  },
+
+  {
+    name: 'Uber Navigation',
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    featuredImage: './images/SnapshootDesktopPortfolioD.svg',
+    technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    liveVersion: 'https://zieeco.github.io/portfolio/',
+    sourceCode: 'https://github.com/zieeco/portfolio',
+  },
+
+];
