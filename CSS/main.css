@@ -836,3 +836,8 @@ main {
 .modal-btn-container .modal-btn {
   display: flex;
 }
+
+.modal-cancel-image:hover,
+.menu-content .x-menu {
+  cursor: pointer;
+}
