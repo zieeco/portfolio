@@ -113,3 +113,17 @@ modalCancelBtn.addEventListener('click', () => {
   const removeModalContainer = document.querySelector('.modal-container');
   removeModalContainer.style.display = 'none';
 });
+
+const form = document.getElementById('contact-form');
+const emailInput = document.getElementById('email');
+const errorMessage = document.querySelector('.error-message');
+
+form.addEventListener('submit', (e) => {
+  if (emailInput.value.toLowerCase() !== emailInput.value) {
+    e.preventDefault();
+    errorMessage.style.cssText = 'color: black; background: white; border-radius: 1px solid black';
+    errorMessage.textContent = 'Please, use lowercase letters for your email address';
+  } else {
+    errorMessage.style.display = 'none';
+  }
+});

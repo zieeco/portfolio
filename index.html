@@ -286,7 +286,7 @@
         built or a project that
         needs
         coding. I’d love to help with it</p>
-      <form action="https://formspree.io/f/xjvjagad" class="contact-form" method="POST">
+      <form action="https://formspree.io/f/xjvjagad" class="contact-form" id="contact-form" method="POST">
         <label for="username">
           <input type="text" name="username" id="username" maxlength="30" placeholder="username" required>
         </label>
@@ -299,7 +299,7 @@
           <textarea name="message" id="message" rows="5" maxlength="500" placeholder="Write your message here!"
             required></textarea>
         </label>
-
+        <span class="error-message"></span>
         <div class="button-container">
           <button class="button" type="submit">Get In Touch</button>
         </div>
