@@ -127,3 +127,45 @@ form.addEventListener('submit', (e) => {
     errorMessage.style.display = 'none';
   }
 });
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+    // everything except Firefox
+      e.code === 22
+            // Firefox
+            || e.code === 1014
+            // test name field too, because code might not be present
+            // everything except Firefox
+            || e.name === 'QuotaExceededError'
+            // Firefox
+            || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+            // acknowledge QuotaExceededError only if there's something already stored
+            && (storage && storage.length !== 0);
+  }
+}
+
+if (storageAvailable('localStorage')) {
+  let formDetails = { name: '', email: '', message: '' };
+  if (window.localStorage.getItem('profile')) {
+    const getProfile = window.localStorage.getItem('profile');
+    formDetails = JSON.parse(getProfile);
+    form.username.value = formDetails.name;
+    form.email.value = formDetails.email;
+    form.message.value = formDetails.message;
+  }
+
+  form.addEventListener('input', () => {
+    formDetails.name = form.username.value;
+    formDetails.email = form.email.value;
+    formDetails.message = form.message.value;
+    window.localStorage.setItem('profile', JSON.stringify(formDetails));
+  });
+}
