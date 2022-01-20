@@ -39,13 +39,13 @@ itemLists.forEach((item) => {
 const myProjects = [
 
   {
-    name: 'Tonic',
-    description: `A daily selection of privately'personalized reads; no accounts or sign-ups
+    name: 'ToDo List App',
+    description: `A To-Do-List App helps users to get their task cordinated and organised. no accounts or sign-ups
     required.`,
-    featuredImage: './images/SnapshootDesktopPortfolioA.svg',
+    featuredImage: './images/todo-desktop.png',
     technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
-    liveVersion: 'https://zieeco.github.io/portfolio/',
-    sourceCode: 'https://github.com/zieeco/portfolio',
+    liveVersion: 'https://zieeco.github.io/To-Do-List/',
+    sourceCode: 'https://github.com/zieeco/To-Do-List',
   },
 
   {
