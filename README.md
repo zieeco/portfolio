@@ -5,17 +5,17 @@
 This is my personal portfolio to showcase my projects.
 
 <p align="center">
-  <img src="./mobile_portfolio.png"/>
+  <img src="./images/mobile_portfolio.png"/>
 </p>
 
 <p align="center">
-  <img src="./portfolio.png"/>
+  <img src="./images/portfolio.png"/>
 </p>
 
 
 ## Built With
 
-- HTMi
+- HTML
 - CSS
 - JAVASCRIPT
 
