@@ -4,13 +4,11 @@
 
 This is my personal portfolio to showcase my projects.
 
-<p align="center">
-  <img src="./images/mobile_portfolio.png"/>
-</p>
 
-<p align="center">
-  <img src="./images/portfolio.png"/>
-</p>
+> || Mobile version || Destop Version ||
+> |-|---------|-|---------|-|
+> || ![Screenshot1](./images/mobile_portfolio.png) || ![screen2](./images/portfolio.png) ||
+
 
 
 ## Built With
