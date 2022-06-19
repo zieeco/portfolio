@@ -1,16 +1,21 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # portfolio
 
 This is my personal portfolio to showcase my projects.
 
 <p align="center">
-  <img src="./screenshot.png"/>
+  <img src="./images/mobile_portfolio.png"/>
 </p>
 
-This project is from the Microverse curriculum. It's main objective is to help student understand how to parse a Figma design to create a user interface and also help student build their portfolio.
+<p align="center">
+  <img src="./images/portfolio.png"/>
+</p>
+
 
 ## Built With
 
-- HTML
+- HTMi
 - CSS
 - JAVASCRIPT
 
@@ -32,23 +37,27 @@ To get a local copy up and running:
 
 ## Author
 
-👤 **Isaac Samuel**
+👤 **Isaac Imaobong Samuel**
 
 - Github: [@zieeco](https://github.com/zieeco)
+- Twitter: [@zieecodes](https://twitter.com/zieecodes)
+- LinkedIn: [Isaac Imaobong Samuel](https://www.linkedin.com/in/isaac-imaobong-samuel/)
 
-- LinkedIn: [Isaac Imaobong Samuel](https://www.linkedin.com/in/isaac-imaobong-samuel-a4849b1b8/)
-
-## Credits
-
-Template from this [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1) by [Microverse](https://bit.ly/MicroverseTN)
 
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page.](https://github.com/zieeco/portfolio/issues)
+
 ## Show your support
 
 Give a ⭐️ if you like this project and how we manage to build it!
+
+## Acknowledgments
+
+Template from this [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1) by [Microverse](https://bit.ly/MicroverseTN)
+
 
 ## 📝 License
 
