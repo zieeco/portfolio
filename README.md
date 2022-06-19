@@ -4,12 +4,9 @@
 
 This is my personal portfolio to showcase my projects.
 
-
 > || Mobile version || Destop Version ||
 > |-|---------|-|---------|-|
 > || ![Screenshot1](./images/mobile_portfolio.png) || ![screen2](./images/portfolio.png) ||
-
-
 
 ## Built With
 
@@ -41,7 +38,6 @@ To get a local copy up and running:
 - Twitter: [@zieecodes](https://twitter.com/zieecodes)
 - LinkedIn: [Isaac Imaobong Samuel](https://www.linkedin.com/in/isaac-imaobong-samuel/)
 
-
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -55,7 +51,6 @@ Give a ⭐️ if you like this project and how we manage to build it!
 ## Acknowledgments
 
 Template from this [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1) by [Microverse](https://bit.ly/MicroverseTN)
-
 
 ## 📝 License
 
