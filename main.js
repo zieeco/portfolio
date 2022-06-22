@@ -245,3 +245,17 @@ const preserveFormData = () => {
   });
 };
 preserveFormData();
+
+// View the List of Languages, Frameworks and Skills 🧑‍💻
+const skillListContainer = document.querySelector('.skill-lists');
+const arrowRightBtn = skillListContainer.querySelectorAll('.arrow-right');
+
+arrowRightBtn.forEach((item, index) => {
+  const languageList = skillListContainer.querySelector('.language-list');
+  let isOpened = false;
+  item.addEventListener('click', () => {
+    isOpened = !isOpened;
+    if (index === 0) languageList.classList.toggle('active');
+    item.src = !isOpened ? './images/arrowright.svg' : './images/arrowdown.svg';
+  });
+});
