@@ -224,3 +224,24 @@ form.addEventListener('submit', (e) => {
     }, 2000);
   }
 });
+
+// Preserve Data in LocalStorage milestone 🏦
+const preserveFormData = () => {
+  const form = document.querySelector('#contact-form');
+  let formDetails = { name: '', email: '', message: '' };
+  if (window.localStorage.getItem('profile')) {
+    const getProfile = window.localStorage.getItem('profile');
+    formDetails = JSON.parse(getProfile);
+    form.username.value = formDetails.name;
+    form.email.value = formDetails.email;
+    form.message.value = formDetails.message;
+  }
+
+  form.addEventListener('input', () => {
+    formDetails.name = form.username.value;
+    formDetails.email = form.email.value;
+    formDetails.message = form.message.value;
+    window.localStorage.setItem('profile', JSON.stringify(formDetails));
+  });
+};
+preserveFormData();
