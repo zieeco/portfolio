@@ -38,7 +38,6 @@ itemLists.forEach((item) => {
   });
 });
 
-
 // Project Template 📋
 const myProjects = [
   {
@@ -134,3 +133,43 @@ const populateProjects = (myProjects) => {
   workSection.innerHTML = display;
 };
 populateProjects(myProjects);
+
+// Modal dynamic layout 🅱️ Ⓜ️
+const createModal = () => {
+  const modal = document.querySelector('.modal-container');
+  modal.innerHTML += ` <div class="modal-card">
+        <div class="modal-header-and-img">
+          <h2 class="modal-card-title"></h2>
+          <img class="modal-cancel-image" src="./images/Icon-Cancel.svg" alt="cancel image">
+        </div>
+        <div class="modal-badge">
+          <span class="modal-badge-items modal-canopy">CANOPY</span>
+          <img src="./images/Counter.svg" alt="counter">
+          <span class="modal-badge-items dsk-fw">Back End Dev</span>
+          <img src="./images/Counter.svg" alt="counter">
+          <span class="modal-badge-items">2015</span>
+        </div>
+        <div class="modal-image-container">
+          <img src="" alt="Tonic" class="mobile-image">
+          <img src="" alt="Tonic" class="desktop-image">
+        </div>
+        <div class="modal-body-block modal-margin">
+          <div class="dsk-wrap">
+            <p class="modal-primary-text hide-for-desktop"></p>
+            <p class="modal-primary-text hide-for-mobile"></p>
+          </div>
+          <div class="wrap-2">
+            <div class="wrap-3">
+              <ul class="modal-tags"></ul>
+              <div class="modal-btn-container">
+                <a href="" target="_blank" rel="noopener noreferrer" class="modal-btn live-link">see live<img
+                    src="./images/Icon-Export.svg" alt=""></a>
+                <a href="" target="_blank" rel="noopener noreferrer" class="modal-btn source-code">see source<img
+                    src="./images/Vector.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+};
+createModal();
