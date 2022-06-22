@@ -207,3 +207,20 @@ modalCancelBtn.addEventListener('click', () => {
   const removeModalContainer = document.querySelector('.modal-container');
   removeModalContainer.style.display = 'none';
 });
+
+// Contact Form Validation ⏹️
+const form = document.getElementById('contact-form');
+const emailInput = document.getElementById('email');
+const errorMessage = document.querySelector('.error-message');
+
+form.addEventListener('submit', (e) => {
+  if (emailInput.value.toLowerCase() !== emailInput.value) {
+    e.preventDefault();
+    errorMessage.style.cssText = 'color: red; background: white; border: 1px solid red; border-radius: 4px; text-align: center';
+    errorMessage.textContent = 'Please, use lowercase letters for your email address';
+
+    setTimeout(() => {
+      errorMessage.style.display = 'none';
+    }, 2000);
+  }
+});
