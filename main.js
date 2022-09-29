@@ -41,56 +41,53 @@ itemLists.forEach((item) => {
 // Project Template 📋
 const myProjects = [
   {
-    name: 'Tonic',
-    badges: [{
-      name1: 'CANOPY', image: './images/Counter.svg', stack1: 'Back End Dev', date: 2015,
-    }],
-    description: `A daily selection of privately'personalized reads; no accounts or sign-ups
-    required.`,
-    featuredImage: './images/SnapshootDesktopPortfolioA.svg',
-    technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
-    liveVersion: 'https://zieeco.github.io/portfolio/',
-    sourceCode: 'https://github.com/zieeco/portfolio',
-  },
-
-  {
-    name: 'Multi-Post Stories',
+    name: 'Quick Budget',
     badges: [{
       nameX: 'CANOPY', name1: 'FACEBOOK', image: './images/Counter.svg', stackX: 'Back End Dev', stack1: 'Full Stack Dev', date: 2015,
     }],
-    description: `Experimental content creation feature that allows users to add
-    to an existing story over the course of a day without
-    spamming their friends.`,
-    featuredImage: './images/SnapshootDesktopPortfolioB.svg',
+    description: 'This app is a simple budget app in which a user can add as many items to their list budget, including things to buy and the amount they cost, and it tracks the items that are yet purchased.',
+    featuredImage: './images/budget.png',
     technology: ['html', 'Ruby on rails', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
-    liveVersion: 'https://zieeco.github.io/portfolio/',
-    sourceCode: 'https://github.com/zieeco/portfolio',
+    liveVersion: 'https://shrouded-castle-53270.herokuapp.com/',
+    sourceCode: 'https://github.com/zieeco/budget-app/tree/development',
   },
 
   {
-    name: 'Facebook 360',
+    name: 'BookStore',
     badges: [{
-      name: 'FACEBOOK', image: './images/Counter.svg', stack: 'Full Stack Dev', date: 2015,
+      name: 'FACEBOOK', image: './images/Counter.svg', stack: 'Front End Dev', date: 2015,
     }],
     description:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR",
-    featuredImage: './images/SnapshootDesktopPortfolioC.svg',
+      'An online book store application built with react and redux. A user can add, and remove a different number of books in different categories from their collection.',
+    featuredImage: './images/bookstore.png',
     technology: ['html', 'Ruby on rails', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
-    liveVersion: 'https://zieeco.github.io/portfolio/',
-    sourceCode: 'https://github.com/zieeco/portfolio',
+    liveVersion: 'https://festive-golick-7e4d21.netlify.app/',
+    sourceCode: 'https://github.com/zieeco/book-store-app',
   },
 
   {
-    name: 'Uber Navigation',
+    name: 'ToDo List',
     badges: [{
-      name: 'Uber', image: './images/Counter.svg', stack: 'Lead Developer', date: 2018,
+      name1: 'TODO List', image: './images/Counter.svg', stack1: 'Front End Dev', date: 2020,
+    }],
+    description: 'A To-Do-List App helps users to get their task cordinated and organised. no accounts or sign-ups required.',
+    featuredImage: './images/todo-desktop.png',
+    technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    liveVersion: 'https://zieeco.github.io/To-Do-List/',
+    sourceCode: 'https://github.com/zieeco/To-Do-List',
+  },
+
+  {
+    name: 'The NAMM Show',
+    badges: [{
+      name: 'NAMM', image: './images/Counter.svg', stack: 'Front End Dev', date: 2020,
     }],
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    featuredImage: './images/SnapshootDesktopPortfolioD.svg',
+      'The National Association of Music Merchants is an annual event in the United States, which describes it as the world’s largest trade-only event for the music products, etc',
+    featuredImage: './images/namm.png',
     technology: ['html', 'Ruby on rails', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
-    liveVersion: 'https://zieeco.github.io/portfolio/',
-    sourceCode: 'https://github.com/zieeco/portfolio',
+    liveVersion: 'https://zieeco.github.io/html-css-js-capstone/',
+    sourceCode: 'https://github.com/zieeco/html-css-js-capstone',
   },
 ];
 
