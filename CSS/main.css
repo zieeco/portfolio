@@ -71,6 +71,11 @@ header .menu:hover {
   backdrop-filter: blur(4px);
 }
 
+.menu-content .x-menu,
+.modal-cancel-image:hover {
+  cursor: pointer;
+}
+
 .menu-content .x-menu {
   display: flex;
   align-self: flex-end;
@@ -212,6 +217,7 @@ main {
 }
 
 /* Mobile and Medium screen */
+
 /* @media screen and (min-width: 400px) and (max-width: 991px) {
   .project-works .project-body-block {
     width: 15.75rem;
@@ -263,6 +269,7 @@ main {
   margin: 0 0 0.75rem 0;
   gap: 0.5rem;
   width: 100%;
+
   /* height: 1.5rem; */
 }
 
@@ -392,6 +399,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
+
   /* width: 92%; */
   width: 100%;
   margin: 0;
@@ -403,6 +411,7 @@ main {
   align-items: center;
   gap: 1rem;
   width: 100%;
+
   /* height: 4.17rem; */
   border-radius: 8px;
   background: #f7f7f9;
@@ -889,9 +898,4 @@ main {
 
 .modal-btn-container .modal-btn {
   display: flex;
-}
-
-.modal-cancel-image:hover,
-.menu-content .x-menu {
-  cursor: pointer;
 }
