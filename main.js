@@ -246,9 +246,13 @@ const arrowRightBtn = skillListContainer.querySelectorAll('.arrow-right');
 
 arrowRightBtn.forEach((item, index) => {
   const languageList = skillListContainer.querySelector('.language-list');
+  const frameWorkList = skillListContainer.querySelector('.frame-work-list');
+  const mySkills = skillListContainer.querySelector('.my-skills');
   let isOpened = false;
   item.addEventListener('click', () => {
     isOpened = !isOpened;
+    if (index === 2) mySkills.classList.toggle('active');
+    if (index === 1) frameWorkList.classList.toggle('active');
     if (index === 0) languageList.classList.toggle('active');
     item.src = !isOpened ? './images/arrowright.svg' : './images/arrowdown.svg';
   });
