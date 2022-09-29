@@ -101,7 +101,7 @@ const populateProjects = (myProjects) => {
   let display = '';
   myProjects.forEach((project, index) => {
     display += `
-      <ul class="project-works row-reverse-desktop">
+      <ul class="project-works ${index === 1 || index === 3 ? 'row-reverse-desktop' : ''}">
         <li class="project-image-container">
           <img src="${project.featuredImage}" alt="Tonic" class="mobile-image">
           <img src="${project.featuredImage}" alt="Tonic" class="desktop-image">
@@ -110,7 +110,7 @@ const populateProjects = (myProjects) => {
           <h2 class="project-title">${project.name}</h2>
           <div class="project-badge">${project.badges.map((badge) => `
           <span class="project-info-items canopy">${badge.name1}</span>
-          <span class="project-info-items canopy hide-for-desktop">${badge.nameX === undefined ? 'Yes' : badge.name1}</span>
+          <span class="project-info-items canopy hide-for-desktop">${badge.nameX}</span>
             <span class="project-info-items canopy hide-for-mobile">${badge.name2}</span>
             <img src="./images/Counter.svg" alt="counter">
             <span class="project-info-items dsk-fw">${badge.stack1}</span>
@@ -119,10 +119,7 @@ const populateProjects = (myProjects) => {
             <img src="./images/Counter.svg" alt="counter">
             <span class="project-info-items">${badge.date1}</span>
             <span class="project-info-items hide-for-desktop">2015</span>
-            <span class="project-info-items hide-for-mobile dsk-fw">2018</span>
-
-            `)}
-            </div>
+            <span class="project-info-items hide-for-mobile dsk-fw">2018</span>`)}</div>
           <p class="project-primary-text hide-for-desktop">${project.description}</p>
           <p class="project-primary-text hide-for-mobile">${project.description}</p>
         <ul class="tags">${index === 0 ? project.technology.slice(0, 3).map((tech) => `<li class="tag">${tech}</li>`).join('') : project.technology.slice(0, 4).map((tech, index) => `<li class="tag ${index === 1 ? 'hide-for-mobile' : ''}">${tech}</li>`).join('')}</ul>
