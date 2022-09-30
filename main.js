@@ -43,11 +43,11 @@ const myProjects = [
   {
     name: 'Quick Budget',
     badges: [{
-      nameX: 'CANOPY', name1: 'FACEBOOK', image: './images/Counter.svg', stackX: 'Back End Dev', stack1: 'Full Stack Dev', date: 2015,
+      name: 'BUDGET', image: './images/Counter.svg', stack: 'Full Stack Dev', date: 2022,
     }],
     description: 'This app is a simple budget app in which a user can add as many items to their list budget, including things to buy and the amount they cost, and it tracks the items that are yet purchased.',
     featuredImage: './images/budget.png',
-    technology: ['html', 'Ruby on rails', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    technology: ['javascript', 'ruby', 'Ruby on rails', 'html', 'css', 'github', 'bootstrap'],
     liveVersion: 'https://shrouded-castle-53270.herokuapp.com/',
     sourceCode: 'https://github.com/zieeco/budget-app/tree/development',
   },
@@ -55,12 +55,12 @@ const myProjects = [
   {
     name: 'BookStore',
     badges: [{
-      name: 'FACEBOOK', image: './images/Counter.svg', stack: 'Front End Dev', date: 2015,
+      name: 'BOOK', image: './images/Counter.svg', stack: 'Front End Dev', date: 2022,
     }],
     description:
       'An online book store application built with react and redux. A user can add, and remove a different number of books in different categories from their collection.',
     featuredImage: './images/bookstore.png',
-    technology: ['html', 'Ruby on rails', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    technology: ['javascript', 'reactJS', 'redux', 'html', 'css', 'Ruby on rails', 'github', 'ruby', 'bootstrap'],
     liveVersion: 'https://festive-golick-7e4d21.netlify.app/',
     sourceCode: 'https://github.com/zieeco/book-store-app',
   },
@@ -68,7 +68,7 @@ const myProjects = [
   {
     name: 'ToDo List',
     badges: [{
-      name1: 'TODO List', image: './images/Counter.svg', stack1: 'Front End Dev', date: 2020,
+      name: 'TODO', image: './images/Counter.svg', stack: 'Front End Dev', date: 2022,
     }],
     description: 'A To-Do-List App helps users to get their task cordinated and organised. no accounts or sign-ups required.',
     featuredImage: './images/todo-desktop.png',
@@ -78,14 +78,14 @@ const myProjects = [
   },
 
   {
-    name: 'The NAMM Show',
+    name: 'NAMM Show',
     badges: [{
-      name: 'NAMM', image: './images/Counter.svg', stack: 'Front End Dev', date: 2020,
+      name: 'NAMM', image: './images/Counter.svg', stack: 'Front End Dev', date: 2021,
     }],
     description:
       'The National Association of Music Merchants is an annual event in the United States, which describes it as the world’s largest trade-only event for the music products, etc',
     featuredImage: './images/namm.png',
-    technology: ['html', 'Ruby on rails', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    technology: ['html', 'css', 'javascript', 'github', 'Ruby on rails', 'ruby', 'bootstrap'],
     liveVersion: 'https://zieeco.github.io/html-css-js-capstone/',
     sourceCode: 'https://github.com/zieeco/html-css-js-capstone',
   },
@@ -106,20 +106,20 @@ const populateProjects = (myProjects) => {
         <li class="project-body-block">
           <h2 class="project-title">${project.name}</h2>
           <div class="project-badge">${project.badges.map((badge) => `
-          <span class="project-info-items canopy">${badge.name1}</span>
-          <span class="project-info-items canopy hide-for-desktop">${badge.nameX}</span>
-            <span class="project-info-items canopy hide-for-mobile">${badge.name2}</span>
-            <img src="./images/Counter.svg" alt="counter">
-            <span class="project-info-items dsk-fw">${badge.stack1}</span>
-            <span class="project-info-items hide-for-desktop">${badge.stackX}</span>
-            <span class="project-info-items hide-for-mobile dsk-fw">${badge.stack2}</span>
-            <img src="./images/Counter.svg" alt="counter">
-            <span class="project-info-items">${badge.date1}</span>
-            <span class="project-info-items hide-for-desktop">2015</span>
-            <span class="project-info-items hide-for-mobile dsk-fw">2018</span>`)}</div>
+          <span class="project-info-items canopy">${badge.name}</span>
+          <span class="project-info-items canopy hide-for-desktop"></span>
+            <span class="project-info-items canopy hide-for-mobile"></span>
+            <img src="${badge.image}" alt="counter">
+            <span class="project-info-items dsk-fw">${badge.stack}</span>
+            <span class="project-info-items hide-for-desktop"></span>
+            <span class="project-info-items hide-for-mobile dsk-fw"></span>
+            <img src="${badge.image}" alt="counter">
+            <span class="project-info-items">${badge.date}</span>
+            <span class="project-info-items hide-for-desktop"></span>
+            <span class="project-info-items hide-for-mobile dsk-fw"></span>`)}</div>
           <p class="project-primary-text hide-for-desktop">${project.description}</p>
           <p class="project-primary-text hide-for-mobile">${project.description}</p>
-        <ul class="tags">${index === 0 ? project.technology.slice(0, 3).map((tech) => `<li class="tag">${tech}</li>`).join('') : project.technology.slice(0, 4).map((tech, index) => `<li class="tag ${index === 1 ? 'hide-for-mobile' : ''}">${tech}</li>`).join('')}</ul>
+        <ul class="tags">${project.technology.slice(0, 4).map((tech, index) => `<li class="tag ${index === 3 ? 'hide-for-mobile' : ''}">${tech}</li>`).join('')}</ul>
           <button class="button see-project" type="button">See Project</button>
         </li>
       </ul>`;
@@ -190,7 +190,7 @@ seeProjectBtn.forEach((item, index) => {
     const liveSourceCode = modal.querySelector('.source-code');
     liveSourceCode.href = project.sourceCode;
     const allTech = modal.querySelector('.modal-tags');
-    allTech.innerHTML = project.technology.filter((tech) => tech.length < 13).map((tech, index) => `<li class="modal-tag ${((index >= 3 && index <= 5) ? 'hide-for-mobile' : '')}">${tech}</li>`).join('');
+    allTech.innerHTML = project.technology.map((tech, index) => `<li class="modal-tag ${((index >= 3) ? 'hide-for-mobile' : '')}">${tech}</li>`).join('');
 
     modal.style.display = 'flex';
   });
