@@ -7,7 +7,7 @@ const mobileMenu = () => {
 
   const htmlContent = `<img class="x-menu" src="images/Icon-Cancel.svg" alt="cancel image">
     <ul class="menu-list-item">
-      <li class="portfolio"><a class="menu-list-items" href="#portfolio">Portfolio</a></li>
+      <li class="portfolio"><a class="menu-list-items" href="#portfolio">Project</a></li>
       <li class="about"><a class="menu-list-items" href="#about">About</a></li>
       <li class="contact"><a class="menu-list-items" href="#contact">Contact</a></li>
     </ul>`;
@@ -46,23 +46,23 @@ const myProjects = [
       name: 'BUDGET', image: './images/Counter.svg', stack: 'Full Stack Dev', date: 2022,
     }],
     description: 'This app is a simple budget app in which a user can add as many items to their list budget, including things to buy and the amount they cost, and it tracks the items that are yet purchased.',
-    featuredImage: './images/budget.png',
+    featuredImage: './images/budget1.png',
     technology: ['javascript', 'ruby', 'Ruby on rails', 'html', 'css', 'github', 'bootstrap'],
     liveVersion: 'https://shrouded-castle-53270.herokuapp.com/',
     sourceCode: 'https://github.com/zieeco/budget-app/tree/development',
   },
 
   {
-    name: 'BookStore',
+    name: 'Calculator',
     badges: [{
-      name: 'BOOK', image: './images/Counter.svg', stack: 'Front End Dev', date: 2022,
+      name: 'MATH', image: './images/Counter.svg', stack: 'Front End Dev', date: 2022,
     }],
     description:
-      'An online book store application built with react and redux. A user can add, and remove a different number of books in different categories from their collection.',
-    featuredImage: './images/bookstore.png',
+      'An online calculator application built with react and redux. Used for performing basic mathematical operations like addition, multiplication, division, and subtraction.',
+    featuredImage: './images/calc.png',
     technology: ['javascript', 'reactJS', 'redux', 'html', 'css', 'Ruby on rails', 'github', 'ruby', 'bootstrap'],
-    liveVersion: 'https://festive-golick-7e4d21.netlify.app/',
-    sourceCode: 'https://github.com/zieeco/book-store-app',
+    liveVersion: 'https://relaxed-ride-bb9e65.netlify.app/',
+    sourceCode: 'https://github.com/zieeco/math-magicians-calculator',
   },
 
   {
