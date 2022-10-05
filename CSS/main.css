@@ -305,6 +305,20 @@ main {
   text-align: center;
 }
 
+.modal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  background: #2230d2;
+}
+
+.modal-btn:hover {
+  color: #3b4eff;
+  background-color: #fff;
+}
+
+.modal-btn:enabled,
 .button:enabled {
   background: #fff;
   color: #3b4eff;
@@ -315,11 +329,13 @@ main {
   background: #3b4eff;
 }
 
+.modal-btn:active,
 .button:active {
   background: #2230d2;
   color: #fff;
 }
 
+.modal-btn:disabled,
 .button:disabled {
   color: #5e6c84;
 }
@@ -889,13 +905,14 @@ main {
   width: 100%;
 }
 
-.modal-btn {
-  align-items: center;
-  justify-content: space-evenly;
-  width: 50%;
-  font-size: 15px;
+@media screen and (min-width: 500px) {
+  .hidden-sm-lg {
+    display: none;
+  }
 }
 
-.modal-btn-container .modal-btn {
-  display: flex;
+@media screen and (max-width: 499px) {
+  .modal-btn-container {
+    display: none;
+  }
 }

@@ -120,7 +120,14 @@ const populateProjects = (myProjects) => {
           <p class="project-primary-text hide-for-desktop">${project.description}</p>
           <p class="project-primary-text hide-for-mobile">${project.description}</p>
         <ul class="tags">${project.technology.slice(0, 4).map((tech, index) => `<li class="tag ${index === 3 ? 'hide-for-mobile' : ''}">${tech}</li>`).join('')}</ul>
-          <button class="button see-project" type="button">See Project</button>
+          <button class="button hidden-sm-lg see-project" type="button">See Project</button>
+          <div class="modal-btn-container">
+            <a href="${project.liveVersion}" target="_blank" rel="noopener noreferrer" class="modal-btn live-link">see live
+            <img src="./images/Icon-Export.svg" alt=""></a>
+            <a href="${project.sourceCode}" target="_blank" rel="noopener noreferrer" class="modal-btn source-code">see source
+            <img src="./images/Vector.svg" alt="">
+            </a>
+          </div>
         </li>
       </ul>`;
   });
@@ -155,12 +162,13 @@ const createModal = () => {
           <div class="wrap-2">
             <div class="wrap-3">
               <ul class="modal-tags"></ul>
-              <div class="modal-btn-container">
-                <a href="" target="_blank" rel="noopener noreferrer" class="modal-btn live-link">see live<img
-                    src="./images/Icon-Export.svg" alt=""></a>
-                <a href="" target="_blank" rel="noopener noreferrer" class="modal-btn source-code">see source<img
-                    src="./images/Vector.svg" alt=""></a>
-              </div>
+            <div class="modal-btn-container">
+            <a href="" target="_blank" rel="noopener noreferrer" class="modal-btn live-link">see live
+            <img src="./images/Icon-Export.svg" alt=""></a>
+            <a href="" target="_blank" rel="noopener noreferrer" class="modal-btn source-code">see source
+            <img src="./images/Vector.svg" alt="">
+            </a>
+          </div>
             </div>
           </div>
         </div>
